@@ -1,0 +1,110 @@
+.card-container {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 10px;
+    width: 95%;
+}
+
+
+
+.card i {
+    font-size: 30px;
+    position: absolute;
+    top: 10px; /* Adjust the top position as needed */
+    right: 10px; /* Adjust the right position as needed */
+}
+.svg-inline--fa {
+    display: var(--fa-display, inline-block);
+    height: 1em;
+    overflow: visible;
+    position: absolute;
+    top: 10%;
+    right: 10%;
+}
+.svg-inline--fa:hover{
+    color: #ffce56;
+} 
+
+.svg-inline--fa {
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.svg-inline--fa:hover {
+    color: #ffce56;
+    transform: scale(1.1); /* Adjust the scale value as needed */
+}
+
+
+
+card-container .card:first-child {
+    background-color: #ddefe0;
+}
+
+
+    .card {
+        width: 210px;
+        height: 120px;
+        padding: 3px;
+        border-radius: 12px;
+        box-shadow: 1.95px 1.95px 2.6px rgba(0, 0, 0, 0.15);
+        font-family: Lato, sans-serif;
+        line-height: 12px;
+        margin: 10px; /* Adjust margin as needed for spacing */
+        position: relative; /* Ensure the parent container is positioned */
+    }
+    
+
+
+
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.card-container .card p:nth-child(2) {
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.card-container .card i {
+    font-size: 30px;
+    position: absolute;
+    right: 15%;
+    top: 10%;
+}
+.colour1{
+    background: #DDEFE0;
+
+
+}
+.colour2{
+    background: #F4ECDD;
+
+}
+.colour3{
+    background: #EFDADA;
+
+}
+.colour4{
+    background: #DEE0EF;
+
+}
+
+@media (max-width: 768px){
+.card-container {
+    align-items: stretch;
+    flex-direction: column;
+}
+
+.card-container .card {
+    margin-bottom: 10px;
+    width: 100%;
+}
+}

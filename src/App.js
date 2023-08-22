@@ -1,23 +1,34 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import Card from './components/Cards';
+import Dashboard from './components/Dashboard';
+import Navbar from './components/Navbar';
+import LoginPage from './loginpage/LoginPage'; // Import LoginPage component
+import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
+
+
 
 function App() {
+
+  const handleSuccessfulSignIn = () => {
+    // Handle any necessary logic for successful sign-in
+    // Navigate to the home page
+    window.location.href = '/';
+  };
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+        <Routes>
+          <Route path="/login" element={<LoginPage />} /> {/* Route for LoginPage */}
+          <Route path="/" element={<div className='main'>
+              <Navbar />
+              <Dashboard />
+              
+            </div>} />
+        </Routes>
+      </Router>
     </div>
   );
 }

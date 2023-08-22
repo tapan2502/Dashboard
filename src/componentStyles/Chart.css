@@ -1,0 +1,119 @@
+.chartContainer {
+    
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .head {
+  
+    justify-content: center;
+    margin-bottom: px;
+  }
+  
+  .left {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+  }
+  
+  #filterYear {
+    margin-left: 10px;
+  }
+  
+  .lineChart {
+    background: white;
+
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+  }
+  
+  .recharts-default-legend {
+    font-size: 14px;
+    margin-top: 20px;
+  }
+  
+  .recharts-legend-item {
+    cursor: pointer;
+    margin-right: 20px;
+    display: inline-flex;
+    align-items: center;
+  }
+  
+  .recharts-legend-icon {
+    width: 14px;
+    height: 14px;
+    margin-right: 8px;
+  }
+  
+  /* Colors for the lines */
+  .recharts-line-dot {
+    fill: #8884d8;
+    stroke: #fff;
+    stroke-width: 2;
+  }
+  
+  .recharts-line-dot.uv {
+    fill: #82ca9d;
+    stroke: #fff;
+    stroke-width: 2;
+  }
+  @media (max-width: 768px) {
+    .chartContainer {
+      padding: 10px; /* Adjust padding for smaller screens */
+    }
+  
+    .head {
+      margin-bottom: 10px; /* Update margin value */
+    }
+  
+    .left {
+      flex-direction: column; /* Stack elements vertically */
+      align-items: center;
+      margin-right: 0; /* No need for right margin in mobile view */
+      margin-bottom: 10px; /* Add margin to separate elements */
+    }
+  
+    #filterYear {
+      margin-left: 0; /* Reset margin for smaller screens */
+      margin-top: 10px; /* Add margin to separate elements */
+    }
+  
+    .lineChart {
+      padding: 20px; /* Adjust padding for smaller screens */
+    }
+  
+    .recharts-default-legend {
+      font-size: 12px; /* Decrease font size for smaller screens */
+      margin-top: 10px; /* Add margin to separate elements */
+    }
+  
+    .recharts-legend-item {
+      margin-right: 10px; /* Update margin value */
+      margin-bottom: 5px; /* Add margin to separate legend items */
+    }
+
+    .lineChart {
+      padding: 20px; /* Adjust padding for smaller screens */
+      overflow-x: auto; /* Allow horizontal scrolling if content overflows */
+      white-space: nowrap; /* Prevent line breaks within the chart */
+    }
+  
+    /* Additional styles to prevent overflow */
+    .recharts-wrapper {
+      width: 100%; /* Ensure the chart wrapper takes full width */
+      min-width: 300px; /* Set a minimum width for the chart */
+    }
+    .lineChart {
+      padding: 20px; /* Adjust padding for smaller screens */
+      overflow: hidden; /* Hide content that overflows */
+      position: relative; /* Set a relative position for the rotated chart */
+    }
+  
+    /* Additional styles to prevent overflow */
+    .recharts-wrapper {
+      width: 100%; /* Ensure the chart wrapper takes full width */
+      min-width: 300px; /* Set a minimum width for the chart */
+    }
+  }

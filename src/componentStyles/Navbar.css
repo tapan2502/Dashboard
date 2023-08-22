@@ -1,0 +1,168 @@
+.sidebar {
+    padding: 10px;
+    width: 15%;
+}
+
+.sidebar .sidebar-inner {
+    background-color: #000;
+    border-radius: 22px;
+    box-shadow: 0 19px 38px rgba(0,0,0,.3), 0 15px 12px rgba(0,0,0,.22);
+    color: #fff;
+    height: 110vh;
+    height: 89vh;
+    overflow: hidden;
+    padding: 2% 6% 2% 40px;
+    position: fixed;
+}
+
+ .sidebar-inner h1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 40px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+ span{
+    animation: blink 1s infinite;
+}
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-family: Montserrat;
+font-size: 18px;
+font-weight: 700;
+line-height: 22px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+
+.sidebar .top-nav p {
+    color: #fff;
+    font-family: Montserrat;
+    line-height: 40px;
+}
+.sidebar .footer {
+    bottom: 1%;
+    margin: 10;
+    padding: 10;
+    position: absolute;
+}
+
+.sidebar .footer p {
+    -webkit-animation: bottomToTop .6s ease-in-out;
+    animation: bottomToTop .6s ease-in-out;
+    color: #ccc;
+}
+
+
+
+@media (max-width: 768px){
+.sidebar {
+    text-align: center;
+    width: 95%;
+}
+
+.sidebar .sidebar-inner {
+    -webkit-animation: backgroundChange 12s ease-in-out infinite;
+    animation: backgroundChange 12s ease-in-out infinite;
+    background-image: url(https://enally.in/images/new/servicesbg.png);
+    height: auto;
+    padding-left: 20px;
+    position: relative;
+}
+
+.sidebar .footer {
+    display: none;
+}
+
+.main {
+    -webkit-animation: backgroundChange 30s ease-in-out infinite;
+    animation: backgroundChange 30s ease-in-out infinite;
+    background-image: url(https://enally.in/images/bg.png);
+    margin: 2% 4%;
+    width: 96%;
+}
+
+ .navbar {
+    padding: 0 6px;
+}
+.navbar .right {
+    gap: 10px;
+
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .nav-links,
+.nav-bottom {
+  list-style: none;
+  
+}
